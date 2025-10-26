@@ -116,6 +116,18 @@
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
+        .project-card-link {
+            display: block;               
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card-link:hover {
+            cursor: pointer;
+            transform: scale(1.02); 
+            transition: transform 0.2s ease;
+            }
+
         .project-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 4px 16px rgba(0,0,0,0.15);
@@ -267,7 +279,7 @@
     </div>
 
     <script>
-        // Project data - edit this array to add your projects
+        // Project data
         const projects = [
             {
                 title: "ESP32 network sniffer",
@@ -348,17 +360,17 @@
                 ).join('');
                 
                 card.innerHTML = `
-                    <img src="${project.image}" alt="${project.title}" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">
-                            <a href="${project.link}" target="_blank">${project.title}</a>
-                        </h3>
-                        <p class="project-description">${project.description}</p>
-                        <div class="project-tags">
-                            ${tagsHTML}
+                    <a href="${project.link}" target="_blank" class="project-card-link">
+                        <img src="${project.image}" alt="${project.title}" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">${project.title}</h3>
+                            <p class="project-description">${project.description}</p>
+                            <div class="project-tags">
+                                ${tagsHTML}
+                            </div>
                         </div>
-                    </div>
-                `;
+                    </a>
+                    `;
                 
                 grid.appendChild(card);
             });
