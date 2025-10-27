@@ -22,16 +22,30 @@
             display: flex;
             min-height: 100vh;
         }
-
-        /* Left Side - Profile */
+        
+        
         .profile-section {
             width: 40%;
             background: #2F3E34;
             color: #e0e0e0;
-            padding: 4rem 3rem;
             position: fixed;
             height: 100vh;
             overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cover-photo {
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+            display: block;
+        }
+
+        .profile-content {
+            margin-top: none;
+            padding: 1rem 3rem 3rem 4rem;
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -216,6 +230,14 @@
                 position: relative;
                 height: auto;
                 min-height: auto;
+            }
+
+            .cover-photo {
+                height: 25vh;
+                object-position: center;
+            }
+
+            .profile-content {
                 padding: 3rem 2rem;
             }
 
@@ -246,29 +268,33 @@
 <body>
     <div class="portfolio-container">
         <!-- Left Side - Profile -->
+        
         <aside class="profile-section">
             <!-- <img src="https://via.placeholder.com/180/444/fff?text=Your+Photo" alt="Your Name" class="profile-image"> -->
-            
-            <h1>Niko Lausto</h1>
-            <p class="title">Full Stack Developer</p>
-            
-            <div class="bio">
-                <p>Second-year software and systems engineering student. Passionate about developing working systems, IoT, and computer networking</p>
-                <element class="tag IoT">IoT</element>
-                <element class="tag core">Backend</element>
-                <element class="tag core">Servers</element>
-                <element class="tag topics">Machine learning</element>
-                <element class="tag IoT">Embedded</element>
-                <element class="tag IoT">Computer Networking</element>
-                <p style="margin-top: 1rem;">When I'm not coding, I like to use my time to learn, read, play videogames and listen to music.</p>
+            <img src="resources/adam.jpg" class="cover-photo">
+            <div class="profile-content">
+                <h1>Niko Lausto</h1>
+                <p class="title">Full Stack Developer</p>
+                
+                <div class="bio">
+                    <p>Second-year software and systems engineering student. Passionate about developing working systems, IoT, and computer networking</p>
+                    <element class="tag IoT">IoT</element>
+                    <element class="tag core">Backend</element>
+                    <element class="tag core">Servers</element>
+                    <element class="tag topics">Machine learning</element>
+                    <element class="tag IoT">Embedded</element>
+                    <element class="tag IoT">Computer Networking</element>
+                    <p style="margin-top: 1rem;">When I'm not coding, I like to use my time to learn, read, play videogames and listen to music.</p>
+                </div>
+                
+                <div class="profile-links">
+                    <a href="https://github.com/NNLisk" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/niko-lausto-459bb1289?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtW7gcIQrQbGuXTY%2BWSQTPA%3D%3D" target="_blank">LinkedIn</a>
+                    <a href="mailto:niko.lausto@example.com">Email</a>
+                    <a href="resources/Niko_Lausto_MasterCV.pdf" target="_blank">CV</a>
+                </div>
             </div>
             
-            <div class="profile-links">
-                <a href="https://github.com/NNLisk" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/niko-lausto-459bb1289?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtW7gcIQrQbGuXTY%2BWSQTPA%3D%3D" target="_blank">LinkedIn</a>
-                <a href="mailto:niko.lausto@example.com">Email</a>
-                <a href="resources/Niko_Lausto_MasterCV.pdf" target="_blank">CV</a>
-            </div>
         </aside>
 
         <!-- Right Side - Projects -->
