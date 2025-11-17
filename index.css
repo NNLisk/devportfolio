@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.dropdown {
+    margin: 0px 0px 12px 0px;
+    padding: 10px;
+    background: #627468;
+    border-radius: 5px;
+    color: #F6F3E7;
+    border: none;
+
+} 
+
+/* Right Side - Projects */
+.projects-section {
+    width: 60%;
+    margin-left: 40%;
+    background: #F6F3E7;
+    padding: 4rem 3rem;
+    overflow-y: auto;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    background: #f0f0f0;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    color: #555;
+}
+
+.tag.language {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.tag.type {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.tag.core {
+    background: #123546;
+    color: #cde7f5;
+}
+
+.tag.IoT {
+    background: #5E7D65;
+    color: #0D1117;
+}
+
+.tag.topics {
+    background: #64FFDA;
+    color: #0A192F;
+}
+
+/* Mobile Layout */
+@media (max-width: 968px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .profile-section {
+        width: 100%;
+        position: relative;
+        height: auto;
+        min-height: auto;
+    }
+
+    .cover-photo {
+        height: 25vh;
+        object-position: center;
+    }
+
+    .profile-content {
+        padding: 3rem 2rem;
+    }
+
+    .projects-section {
+        width: 100%;
+        margin-left: 0;
+        padding: 3rem 2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 969px) and (max-width: 1400px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1401px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
