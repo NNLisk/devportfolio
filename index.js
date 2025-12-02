@@ -14,7 +14,7 @@ const collabs = [
     {
         title: "Automatic licence plate recognition system",
         link: "https://github.com/NNLisk/Automatic-plate-recognition-system",
-        image: "OCR.png",
+        image: "resources/OCR.png",
         description: "A self built convolutional neural network for OCR and YOLO plate detection. Can be used in multiple traffic related issues",
         myRole: "Image processing, and Machine learning architecture and training",
         Architecture: "Pytorch frame for CNN and YOLOv8 for plate detection, language: python"
