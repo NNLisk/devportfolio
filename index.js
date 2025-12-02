@@ -10,6 +10,14 @@ const collabs = [
         description: "We decided to work on a solution for WithSecure's challenge: To provide a security information tool for a company's information security team to assess and validate the software used by company developers fast and reliably",
         myRole: "Lead backend developer",
         Architecture: "Rust backend + vanilla JS frontend with tauri framework"
+    },
+    {
+        title: "Automatic licence plate recognition system",
+        link: "https://github.com/NNLisk/Automatic-plate-recognition-system",
+        image: "OCR.png",
+        description: "A self built convolutional neural network for OCR and YOLO plate detection. Can be used in multiple traffic related issues",
+        myRole: "Image processing, and Machine learning architecture and training",
+        Architecture: "Pytorch frame for CNN and YOLOv8 for plate detection, language: python"
     }
 ];
 const projects = [
