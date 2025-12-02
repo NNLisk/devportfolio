@@ -1,4 +1,4 @@
-@media (max-width: 968px) {
+@media (max-width: 800px) {
     .portfolio-container {
         flex-direction: column;
     }
