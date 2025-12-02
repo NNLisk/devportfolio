@@ -78,37 +78,6 @@ body {
 }
 
 /* Mobile Layout */
-@media (max-width: 968px) {
-    .portfolio-container {
-        flex-direction: column;
-    }
-
-    .profile-section {
-        width: 100%;
-        position: relative;
-        height: auto;
-        min-height: auto;
-    }
-
-    .cover-photo {
-        height: 25vh;
-        object-position: center;
-    }
-
-    .profile-content {
-        padding: 3rem 2rem;
-    }
-
-    .projects-section {
-        width: 100%;
-        margin-left: 0;
-        padding: 3rem 2rem;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 @media (min-width: 969px) and (max-width: 1400px) {
     .projects-grid {
