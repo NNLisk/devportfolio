@@ -43,6 +43,17 @@ const projects = [
         ]
     },
     {
+        title: "TypeWriter",
+        link: "https://github.com//NNLisk/TypeWriter",
+        image: "",
+        description: "A Fullstack document writing website with features like encrypted login, file sharing, login sessions, wysiwyg editor.",
+        tags: [
+            {text: "Typescript", type: "language"},
+            {text: "Node/Express.js", type: "language"},
+            {text: "React", type: "language"}
+        ]
+    },
+    {
         title: "Asynchronous web-server in Rust",
         link: "https://github.com/NNLisk/Rust-http-server",
         image: "resources/RustServer.png",
