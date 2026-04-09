@@ -45,7 +45,7 @@ const projects = [
     {
         title: "TypeWriter",
         link: "https://github.com//NNLisk/TypeWriter",
-        image: "",
+        image: "resources/TypeWriter.png",
         description: "A Fullstack document writing website with features like encrypted login, file sharing, login sessions, wysiwyg editor.",
         tags: [
             {text: "Typescript", type: "language"},
